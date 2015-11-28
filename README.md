@@ -5,7 +5,7 @@ Mac setup for basic dev tools using brew.
 The first thing we want to do is make sure that you own /usr/local/ and everything under it, so you don't need `sudo` rights to install anything. 
 
 
-** Create it **
+**Create it**
  
 Check to see if you have a `/usr/local` directory. If /usr/local doesn't exist, let's create it.
 
@@ -13,7 +13,7 @@ Check to see if you have a `/usr/local` directory. If /usr/local doesn't exist, 
 $ sudo mkdir /usr/local
 ```
 
-** Take ownership **
+**Take ownership**
 
 Set ownership to you so you can rw without sudo. 
 
@@ -23,7 +23,7 @@ $ sudo chown -R $USER:admin /usr/local
 
 ## Homebrew
 
-** Install Homebrew **
+**Install Homebrew**
 
 Skip this step if you already have [homebrew](http://brew.sh/) installed.
 
@@ -33,7 +33,7 @@ To install homebrew, run the command below in your terminal. It **should not** a
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-** Update homebrew **
+**Update homebrew**
 
 Before we install any packages, let's update Homebrew.
 
@@ -59,7 +59,7 @@ $ curl -L https://www.npmjs.com/install.sh | sh
 
 The goal is to remove the dependency on `sudo`. We'll need to list out what packages you already have globally so we can reinstall them. 
 
-** 1. Find what global packages you have **
+**1. Find what global packages you have**
 
 ```
 $ cd /usr/local/lib/node_modules
@@ -68,7 +68,7 @@ $ ls -la
 Write all of these down so can reinstall them. 
 
 
-** 2. Remove all existing node and NPM directories. **
+**2. Remove all existing node and NPM directories.**
 
 ```
 $ rm -rf ~/.npm
@@ -87,7 +87,7 @@ $ echo prefix=~/.node >> ~/.npmrc
 $ curl -L https://www.npmjs.com/install.sh | sh
 ```
 
-** 4. Reinstall your global packages **
+**4. Reinstall your global packages**
 
 ```
 $ npm install -g <package> <package> <package> etc.
@@ -96,7 +96,7 @@ $ npm install -g <package> <package> <package> etc.
 ## Update your PATH and NODE_PATH
 Now we'll update your `PATH` to include the directories you need
 
-** Edit your ~/.bash_profile **
+**Edit your ~/.bash_profile**
 Look for your `PATH` statement, and make sure it includes the following paths:
 
 ```
