@@ -35,12 +35,23 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 
 **Update homebrew**
 
-Before we install any packages, let's update Homebrew.
+Before we install any formulae, let's update Homebrew.
 
 ```
 $ brew doctor
 $ brew update
 $ brew doctor
+```
+
+**Add a few taps**
+
+Now we'll add a few more repositories for installing brew formulae.
+
+```
+$ brew tap homebrew/dupes
+$ brew tap homebrew/versions
+$ brew tap caskroom/cask
+$ brew install caskroom/cask/brew-cask
 ```
 
 ## Node & NPM
