@@ -78,7 +78,7 @@ $ rm -rf ~/node_modules
 $ rm -rf /usr/local/lib/node_modules
 ```
 
-** 3. Uninstall, then reinstall node & NPM **
+**3. Uninstall, then reinstall node & NPM**
 
 ```
 $ brew uninstall node
@@ -97,6 +97,7 @@ $ npm install -g <package> <package> <package> etc.
 Now we'll update your `PATH` to include the directories you need
 
 **Edit your ~/.bash_profile**
+
 Look for your `PATH` statement, and make sure it includes the following paths:
 
 ```
