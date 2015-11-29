@@ -36,6 +36,7 @@ pack1=(
 	ffmpeg
 	tree
 	graphicsmagick
+	jenv
 )
 # Install brew formulae to /usr/local/bin
 echo "Installing brew core formulae..."
