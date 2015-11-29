@@ -30,6 +30,12 @@ pack1=(
 	zsh
 	rbenv
 	ruby-build
+	imagemagick
+	youtube-dl
+	hub
+	ffmpeg
+	tree
+	graphicsmagick
 )
 # Install brew formulae to /usr/local/bin
 echo "Installing brew core formulae..."
@@ -50,3 +56,17 @@ brew install ${pack2[@]} --with-default-names
 # Additional formulae
 brew install wdiff --with-gettext
 brew install vim --override-system-vi
+
+# Casks to Install
+casks1=(
+	atom
+	cakebrew
+	flux
+	java
+	sublime-text
+	virtualbox
+	vagrant
+	vlc
+)
+# Install brew casks
+brew cask install ${casks1[@]}
